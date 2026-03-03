@@ -3,6 +3,7 @@
 Complete automated DevSecOps workflow deploying a URL Shortener microservice
 
 View Infrastructure Repo - View CI Pipeline - View GitOps Repo
+____
 
 </div>
 <b> 📋 What This Project Does: </b>
@@ -138,6 +139,7 @@ OBSERVABILITY & MONITORING
 - AWS (EKS/EC2/VPC)
 - Jenkins
 - Security Tools (Trivy, Gitleaks, SonarQube)
+____
 
 <h3> <b> 2. CI Pipeline </b> </h3>
 <b> Purpose:  
@@ -165,6 +167,7 @@ OBSERVABILITY & MONITORING
 - PostgreSQL
 - Jenkins
 - Trivy
+____
 
 <h3> <b> 3. GitOps Deployment Pipeline </b> </h3>
 <b> Purpose: </b>
@@ -193,6 +196,7 @@ OBSERVABILITY & MONITORING
 - Prometheus
 - Grafana
 - Loki
+____
 
 <b> 🔄 Workflow Automation: </b> 
 ```
@@ -230,6 +234,7 @@ OBSERVABILITY & MONITORING
 
 ```
 Result: Fully automated infrastructure → build → deploy → monitor workflow with security integrated at every stage.
+____
 
 <b> 🛠️ Tech Stack: </b> 
 
@@ -239,7 +244,8 @@ Result: Fully automated infrastructure → build → deploy → monitor workflow
 - Security	-> Trivy, Gitleaks, SonarQube
 - Monitoring	-> Prometheus, Grafana, Loki, Promtail
 - Application	-> Node.js, Express, SQLlite
-  
+____
+
 <b> 🚀 Quick Start </b> 
 
 <b> Clone All Repositories: </b> 
@@ -254,11 +260,14 @@ git clone https://github.com/Ahmedlebshten/ArgoCD-Pipeline.git
 ``` 
 kubectl get svc url-shortener
 ```
+____
+
 <b> 📊 Monitoring: </b> 
 
 - Prometheus: Collects metrics (requests/sec, response time, resource usage).
 - Grafana: Pre-configured dashboards for URL Shortener, Kubernetes, and security.
 - Loki: Centralized log aggregation from all pods.
+____
 
 <b> 💡 Skills Demonstrated: </b> 
 
@@ -271,30 +280,23 @@ kubectl get svc url-shortener
 - ✅ Monitoring & Observability (Prometheus/Grafana)
 - ✅ Security Integration (Trivy/Gitleaks/SonarQube)
 - ✅ Microservices Architecture (URL Shortener)
+____
 
 <b> <h3> 📂 Project Repositories: </b> </h3>
 
 <b> 🔗 Infrastructure Pipeline </b> 
-[github.com/Ahmedlebshten/Jenkins-Pipeline-Build-Infra](https://github.com/Ahmedlebshten/Jenkins-Pipeline-Build-Infra)
-
-Terraform IaC for AWS EKS provisioning with security scanning
+- https://github.com/Ahmedlebshten/Jenkins-Pipeline-Build-Infra
 
 <b> 🔗 CI Pipeline </b> 
-[github.com/Ahmedlebshten/Jenkins-CI-Pipeline](https://github.com/Ahmedlebshten/Jenkins-CI-Pipeline)
-
-Docker build pipeline for URL Shortener application
+- https://github.com/Ahmedlebshten/Jenkins-CI-Pipeline
 
 <b> 🔗 GitOps Deployment </b> 
-[github.com/Ahmedlebshten/ArgoCD-Pipeline](https://github.com/Ahmedlebshten/ArgoCD-Pipeline)
-
-ArgoCD deployment manifests with monitoring and security tools
+- https://github.com/Ahmedlebshten/ArgoCD-Pipeline
 
 <b> 🔗 DockerHub Repo </b> 
-https://hub.docker.com/repository/docker/ahmedlebshten/url-shortener/general
+- https://hub.docker.com/repository/docker/ahmedlebshten/url-shortener/general
 
-Create image form Dockerfile, build, push it to DockerHub
-
-<b> 📬 Contact </b> 
+<b> 📬 Connect With Me </b> 
 
 - GitHub: [https://github.com/Ahmedlebshten]
 - LinkedIn: [https://www.linkedin.com/in/ahmedlebshten]
