@@ -1,26 +1,17 @@
-<b> <h1> 🚀 DevSecOps CI/CD Pipeline with GitOps </b> </h1>
-<div align="center">
-Complete automated DevSecOps workflow deploying a URL Shortener microservice
-
-View Infrastructure Repo - View CI Pipeline - View GitOps Repo
+# 🚀 DevSecOps CI/CD Pipeline with GitOps 
 ____
 
-</div>
-<b> 📋 What This Project Does: </b>
-
-<b> -> End-to-end automated DevSecOps pipeline that: </b>
-
-
+## 📋 What This Project Does: 
 - Provisions AWS infrastructure (EKS, VPC, EC2) using Terraform.
 - Builds and scans Docker images with integrated security tools (Trivy, Gitleaks, SonarQube).
 - Deploys a URL Shortener microservice to Kubernetes via ArgoCD (GitOps).
 - Implements full monitoring stack (Prometheus, Grafana, Loki).
 - Auto-triggers downstream pipelines for complete workflow automation.
 
-Main Application: 
-A URL Shortener web service that converts long URLs into short, shareable links. Built with Node.js, SQLlite, containerized with Docker, and deployed on Kubernetes via ArgoCD.
+## Main Application: 
+- A URL Shortener web service that converts long URLs into short, shareable links. Built with Node.js, SQLlite, containerized with Docker, and deployed on Kubernetes via ArgoCD.
 
-<b> 🏗️ URL Shortener Webservice Architecture Flow: </b>
+## 🏗️ URL Shortener Webservice Architecture Flow: 
 ```
 
 ┌──────────────────────────────────────────────────────────────────────┐
@@ -118,9 +109,9 @@ OBSERVABILITY & MONITORING
 
 ```
 
-<h2> <b> 📂 Project Structure </h2> </b>
+## 📂 Project Structure
            
-<h3> <b> 1️⃣ Infrastructure Pipeline </b> </h3>
+#### 1️⃣ Infrastructure Pipeline 
 <b> Purpose: </b>
 
 
@@ -141,7 +132,7 @@ OBSERVABILITY & MONITORING
 - Security Tools (Trivy, Gitleaks, SonarQube)
 ____
 
-<h3> <b> 2️⃣ CI Pipeline </b> </h3>
+#### 2️⃣ CI Pipeline 
 <b> Purpose:  
 </b>
 
@@ -169,7 +160,7 @@ ____
 - Trivy
 ____
 
-<h3> <b> 3️⃣ GitOps Deployment Pipeline </b> </h3>
+#### 3️⃣ GitOps Deployment Pipeline 
 <b> Purpose: </b>
 
 
@@ -198,7 +189,7 @@ ____
 - Loki
 ____
 
-<b> 🔄 Workflow Automation: </b> 
+## 🔄 Workflow Automation: 
 ```
 1. Push to Infra GitHub repo → Jenkins triggers:
    └─ Infra Pipeline (provision / update EKS infrastructure)
@@ -236,7 +227,7 @@ ____
 Result: Fully automated infrastructure → build → deploy → monitor workflow with security integrated at every stage.
 ____
 
-<b> 🛠️ Tech Stack: </b> 
+## 🛠️ Tech Stack: 
 
 - Infrastructure	-> Terraform, AWS (EKS, EC2, VPC, S3)
 - CI/CD	-> Jenkins, Docker, Git
@@ -246,9 +237,9 @@ ____
 - Application	-> Node.js, Express, SQLlite
 ____
 
-<b> 🚀 Quick Start </b> 
+## 🚀 Quick Start 
 
-<b> Clone All Repositories: </b> 
+#### Clone All Repositories: 
 ```
 git clone https://github.com/Ahmedlebshten/Jenkins-Pipeline-Build-Infra.git
 
@@ -256,20 +247,20 @@ git clone https://github.com/Ahmedlebshten/Jenkins-CI-Pipeline.git
 
 git clone https://github.com/Ahmedlebshten/ArgoCD-Pipeline.git
 ```
-<b> Access Deployed Service: </b> 
+#### Access Deployed Service: 
 ``` 
 kubectl get svc url-shortener
 ```
 ____
 
-<b> 📊 Monitoring: </b> 
+## 📊 Monitoring: 
 
 - Prometheus: Collects metrics (requests/sec, response time, resource usage).
 - Grafana: Pre-configured dashboards for URL Shortener, Kubernetes, and security.
 - Loki: Centralized log aggregation from all pods.
 ____
 
-<b> 💡 Skills Demonstrated: </b> 
+## 💡 Skills Demonstrated: 
 
 - ✅ DevSecOps (security shift-left)
 - ✅ Infrastructure as Code (Terraform)
@@ -282,21 +273,21 @@ ____
 - ✅ Microservices Architecture (URL Shortener)
 ____
 
-<b> <h3> 📂 Project Repositories: </b> </h3>
+## 📂 Project Repositories:
 
-<b> 🔗 Infrastructure Pipeline </b> 
+#### 🔗 Infrastructure Pipeline 
 - https://github.com/Ahmedlebshten/Jenkins-Pipeline-Build-Infra
 
-<b> 🔗 CI Pipeline </b> 
+#### 🔗 CI Pipeline 
 - https://github.com/Ahmedlebshten/Jenkins-CI-Pipeline
 
-<b> 🔗 GitOps Deployment </b> 
+#### 🔗 GitOps Deployment 
 - https://github.com/Ahmedlebshten/ArgoCD-Pipeline
 
-<b> 🔗 DockerHub Repo </b> 
+#### 🔗 DockerHub Repo 
 - https://hub.docker.com/repository/docker/ahmedlebshten/url-shortener/general
 
-<b> 📬 Connect With Me </b> 
+## 📬 Connect With Me 
 
 - GitHub: [https://github.com/Ahmedlebshten]
 - LinkedIn: [https://www.linkedin.com/in/ahmedlebshten]
