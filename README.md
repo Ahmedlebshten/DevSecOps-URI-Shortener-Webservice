@@ -120,7 +120,7 @@ OBSERVABILITY & MONITORING
 
 <h2> <b> 📂 Project Structure </h2> </b>
            
-<h3> <b> 1. Infrastructure Pipeline </b> </h3>
+<h3> <b> 1️⃣ Infrastructure Pipeline </b> </h3>
 <b> Purpose: </b>
 
 
@@ -141,7 +141,7 @@ OBSERVABILITY & MONITORING
 - Security Tools (Trivy, Gitleaks, SonarQube)
 ____
 
-<h3> <b> 2. CI Pipeline </b> </h3>
+<h3> <b> 2️⃣ CI Pipeline </b> </h3>
 <b> Purpose:  
 </b>
 
@@ -169,7 +169,7 @@ ____
 - Trivy
 ____
 
-<h3> <b> 3. GitOps Deployment Pipeline </b> </h3>
+<h3> <b> 3️⃣ GitOps Deployment Pipeline </b> </h3>
 <b> Purpose: </b>
 
 
