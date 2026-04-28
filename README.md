@@ -1,8 +1,14 @@
 # 🚀 DevSecOps CI/CD Pipeline with GitOps 
 ____
 
+## 🖼️ System Architecture
+
+<img width="1279" height="639" alt="architecture" src="https://github.com/user-attachments/assets/52e1c0cc-e710-411d-9b05-7f79ad939fc4" />
+____
+
 ## 📋 What This Project Does: 
-- Provisions AWS infrastructure (EKS, VPC, EC2) using Terraform.
+- Provisions AWS infrastructure (EKS, VPC, EC2) using Terraform.![Uploading architecture.jpeg…]()
+
 - Builds and scans Docker images with integrated security tools (Trivy, Gitleaks, SonarQube).
 - Deploys a URL Shortener microservice to Kubernetes via ArgoCD (GitOps).
 - Implements full monitoring stack (Prometheus, Grafana, Loki).
