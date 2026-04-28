@@ -4,7 +4,6 @@ ____
 ## 🖼️ System Architecture
 
 <img width="1279" height="639" alt="architecture" src="https://github.com/user-attachments/assets/52e1c0cc-e710-411d-9b05-7f79ad939fc4" />
-____
 
 ## 📋 What This Project Does: 
 - Provisions AWS infrastructure (EKS, VPC, EC2) using Terraform.![Uploading architecture.jpeg…]()
