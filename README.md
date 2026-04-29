@@ -3,7 +3,7 @@ ____
 
 ## 🖼️ System Architecture
 
-<img width="1279" height="639" alt="architecture" src="https://github.com/user-attachments/assets/52e1c0cc-e710-411d-9b05-7f79ad939fc4" />
+<img width="1536" height="1024" alt="new-depi" src="https://github.com/user-attachments/assets/1769fa68-23f3-4639-bd06-82eb39bb72b9" />
 
 ## 📋 What This Project Does: 
 - Provisions AWS infrastructure (EKS, VPC, EC2) using Terraform.
@@ -14,104 +14,6 @@ ____
 
 ## Main Application: 
 - A URL Shortener web service that converts long URLs into short, shareable links. Built with Node.js, SQLlite, containerized with Docker, and deployed on Kubernetes via ArgoCD.
-
-## 🏗️ URL Shortener Webservice Architecture Flow: 
-```
-
-┌──────────────────────────────────────────────────────────────────────┐
-│                 COMPLETE INFRA + CI/CD GITOPS FLOW                   │
-└──────────────────────────────────────────────────────────────────────┘
-
-INFRASTRUCTURE LAYER (ONE-TIME / WHEN INFRA CHANGES)
-----------------------------------------------------
-
-           ┌──────────────── Infra Repo (GitHub) ────────────────┐
-           │  (Terraform for AWS EKS + VPC + Nodes + IAM)        │
-           └─────────────────────────────────────────────────────┘
-
-        ┌─────────────┐        Webhook        ┌────────────────┐
-        │  GitHub     │ ───────────────────▶ │    Jenkins     │
-        │ (Infra IaC) │                       │ Infra Pipeline │
-        └─────────────┘                       └────────────────┘
-                                                      │
-                                                      │  Terraform apply
-                                                      ▼
-                                              ┌───────────────┐
-                                              │   AWS (EKS,   │
-                                              │   VPC, Nodes) │
-                                              └───────────────┘
-                                                      │
-                            After first successful Infra run
-                                                      ▼
-                                              ┌───────────────┐
-                                              │ Install       │
-                                              │ ArgoCD on EKS │
-                                              └──────┬────────┘
-                                                     ▼
-                                       ┌────────────────────────┐
-                                       │ ArgoCD Applications    │
-                                       │ - URL Shortener        │
-                                       │ - Monitoring stack     │
-                                       │ - Security tools       │
-                                       └──────────┬─────────────┘
-                                                  ▼
-
-
-CI / CD + SECURITY (ON EVERY APP CODE CHANGE)
----------------------------------------------
-
-           ┌──────────────── CI Repo (GitHub) ──────────────────┐
-           │ (URL Shortener source code + Jenkinsfile)          │
-           └────────────────────────────────────────────────────┘
-
-        ┌─────────────┐        Webhook        ┌───────────────┐
-        │  GitHub     │ ───────────────────▶ │    Jenkins     │
-        │ (App Code)  │                      │   CI Pipeline  │
-        └─────────────┘                      └────────────────┘
-                                                      │
-                                                      │ build / test / package
-                                                      ▼
-                                           ┌────────────────────┐
-                                           │ Security Scanning  │
-                                           │ Gitleaks + Trivy + │
-                                           │ SonarQube          │
-                                           └─────────┬──────────┘
-                                                     │  all checks pass
-                                                     ▼
-                                       ┌────────────────────────┐
-                                       │ DockerHub (Images      │
-                                       │ with auto tags)        │
-                                       └──────────┬─────────────┘
-                                                  │
-                                                  │ Update image tag
-                                                  │ in CD GitOps repo
-                                                  ▼
-                                       ┌────────────────────────┐
-                                       │ ArgoCD CD Repo         │
-                                       │ (ArgoCD-Pipeline       │
-                                       │  manifests)            │
-                                       └──────────┬─────────────┘
-                                                  │
-                                                  │ GitOps sync
-                                                  ▼
-                                       ┌────────────────────────┐
-                                       │ EKS Cluster Runtime    │
-                                       │ URL Shortener + Tools  │
-                                       └──────────┬─────────────┘
-                                                  ▼
-
-
-OBSERVABILITY & MONITORING
---------------------------
-
-                                       ┌─────────────────────────┐
-                                       │ Monitoring Stack        │
-                                       │ Prometheus + Grafana +  │
-                                       │ Loki / Promtail         │
-                                       └─────────────────────────┘
-
-
-```
 
 ## 📂 Project Structure
            
