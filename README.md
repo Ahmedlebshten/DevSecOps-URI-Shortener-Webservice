@@ -1,4 +1,4 @@
-# 🚀 DevSecOps CI/CD Pipeline with GitOps 
+# 🚀 DevSecSps-URI-Shortener-Webservice
 ____
 
 ## 🖼️ System Architecture
