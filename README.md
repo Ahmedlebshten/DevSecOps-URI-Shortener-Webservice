@@ -1,4 +1,4 @@
-# 🚀 DevSecSps-URI-Shortener-Webservice
+# 🚀 DevSecOps-URI-Shortener-Webservice
 ____
 
 ## 🖼️ System Architecture
